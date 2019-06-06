@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW-15: Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset" onchange="optionChanged(this.value)"> -->
+          <!-- <select id="selDataset" onchange=optionChanged(this.value)> -->
+          <!-- 
+            <select id="selDataset">
+            </select> -->
+          <!-- 
+          SCRAP the code below also, can't get the 
+          data back from onchange to the .JS BUT ***WHY???***
+          <select id="selDataset" onchange="getData(this.value)">
+            <option value="dataset1">DataSet1</option>
+            <option value="dataset2">DataSet2</option>
+            <option value="dataset3">DataSet3</option>
+            <option value="dataset4">DataSet4</option>
+            <option value="">Default</option>
+          </select> 
+          -->
+          <!-- Below From OLD 2-01/NEW 2-08 Dropdown_Events -->
+<!-- 
+// Ahhhh, NOWW I see why they changedd Unit 15
+// the NEW way is a lot more straighforward
+// than the old way. Many ways to skin the cat
+// but some  are easier
+-->
+          <select id="selDataset">
+            <option value="dataset1">dataSet1</option>
+            <option value="dataset2">dataSet2</option>
+            <option value="dataset3">dataset3</option>
+          </select>
+        </div>
+<!--    <div>
+          <h3>Added after the pull down: Will the "Demographic Info" please appear??</h3>
+        </div>
+-->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+              <div class="demog-info-table">
+                <table>
+                  <tr><td>ID: </td><td id=idtext>Choose at pull down above</td></tr>
+                  <tr><td>Ethnicity: </td><td id=ethtext>TBD</td></tr>
+                  <tr><td>Gender: </td><td id=gentext>TBD</td></tr>
+                  <tr><td>Age: </td><td id=agetext>TBD</td></tr>
+                  <tr><td>Location: </td><td id=loctext>TBD</td></tr>
+                  <tr><td>BB Type: </td><td id=bbttext>TBD</td></tr>
+                  <tr><td>Wash Freq: </td><td id=wfrtext>TBD</td></tr>
+                </table>
+              <!-- Put table headings-->
+              <!-- Put some dummy data in here for init??-->
+            </div>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar-chart-location-id"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge-chart-location-id"></div>
+      </div>
+    </div>
+    <div class="row">
+<!--      <div class="col-md-12"> -->
+    <div class="col-md-5">
+        <div id="bubble-chart-location-id"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="mmapp.js"></script>
+  <!-- <script src="./static/js/bonus.js"></script>
+    forgett the bonius for now
+-->
+</body>
+
+</html>
